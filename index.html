@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryOrange: '#FF8938',
+                        secondaryOrange: '#FF0000',
+                        secondaryGray: '#D9D9D9',
+                    },
+                    fontFamily: {
+                        manrope: 'Manrope, sans-serif',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- Google font Manrope -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+    p {
+        color: #777777;
+    }
+</style>
+
+<body class="font-monrope">
+    <!-- header section -->
+    <header class="w-5/6 mx-auto pt-16">
+        <div class="flex flex-col md:flex-row gap-5 items-center">
+            <div>
+                <h1 class="font-extrabold text-7xl">It's good <br> tea time at The <br>Tea House</h1>
+                <p class="font-medium text-lg my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+                    Your
+                    Taste Buds.</p>
+                <button
+                    class="bg-gradient-to-r from-primaryOrange to-secondaryOrange rounded-lg px-5 py-4 text-white font-bold">
+                    Explore More
+                    <img class="inline ml-3" src="images/arrow.png" alt="">
+                </button>
+            </div>
+            <div class="relative">
+                <img class="z-10" src="images/banner.png" alt="">
+                <div
+                    class="shadow-lg rounded-lg px-7 py-5 flex items-center gap-4 w-60 h-24 -mt-28 md:ml-24 z-20 bg-white  absolute">
+                    <img class="w-8 h-8" src="images/star-solid.svg" alt="">
+                    <div>
+                        <h4 class="text-3xl font-extrabold">5.0</h4>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+    <main>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
